@@ -1,0 +1,70 @@
+.Items {
+    margin: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Pagination {
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    margin: 10px auto 30px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #BDE0FE;
+}
+
+.PageNum {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+}
+
+.PageNum:hover,
+.Active {
+    background-color: #ECECEC;
+    box-shadow: 3px 3px 4px #FFAFCC;
+    color: rgb(126 110 136);
+}
+
+.PageNP {
+    padding: 5px 15px;
+    cursor: pointer;
+    color: black;
+}
+
+.PageNP:hover {
+    color: rgb(126 110 136);
+}
+
+
+
+@media (max-width: 550px) {
+    .Pagination {
+        padding: 3px;
+        gap: 2px;
+        margin: 20px auto;
+    }
+    .PageNum {
+        padding: 5px;
+    }
+    .PageNP:hover {
+        color: black;
+    }
+}
+
+@media (max-width: 400px) {
+    .PageNum {
+        display: none;
+    }
+    .Active {
+        display: contents;
+    }
+}
